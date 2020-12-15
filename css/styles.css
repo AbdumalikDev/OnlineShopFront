@@ -254,32 +254,39 @@ nav {
 /*------- FEATURED PRODUCTS -------*/
 
 .product-card {
-  width: 350px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
-  margin: 50px 20px;
+  margin: 50px 15px;
   background: #fafafa;
 }
 
-/* .badge {
+.badge {
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 15px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 700;
   background: red;
   color: #fff;
   padding: 3px 10px;
-} */
+}
 
 .product-tumb {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 250px;
   padding: 50px;
   background: #f0f0f0;
+  transition: padding 0.3s;
+}
+
+.product-tumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  transition: all 0.3s;
 }
 
 .product-tumb img {
@@ -288,32 +295,22 @@ nav {
 }
 
 .product-details {
-  padding: 20px;
+  padding: 25px;
 }
 
 .product-catagory {
-  display: inline-block;
-  font-size: 12px;
+  display: block;
+  font-size: 60%;
   font-weight: 700;
   text-transform: uppercase;
   color: #ccc;
-  margin-left: 18px;
+  margin-bottom: 15px;
 }
-
-/* .rating {
-  display: inline-block;
-  margin-left: 130px;
-  margin-top: 10px;
-}
-.rating a {
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-} */
 
 .product-details h4 a {
   font-weight: 500;
   display: block;
+  margin-bottom: 18px;
   text-transform: uppercase;
   color: #363636;
   text-decoration: none;
@@ -324,12 +321,12 @@ nav {
   color: #fbb72c;
 }
 
-/* .product-details p {
+.product-details p {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 18px;
   color: #999;
-} */
+}
 
 .product-bottom-details {
   overflow: hidden;
@@ -337,10 +334,9 @@ nav {
   padding-top: 20px;
 }
 
-.product-bottom-details a {
-  display: inline-block;
-  width: 140px !important;
-  margin: 30px 6px 0;
+.product-bottom-details div {
+  float: left;
+  width: 50%;
 }
 
 .product-price {
@@ -355,6 +351,22 @@ nav {
   text-decoration: line-through;
   display: inline-block;
   margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: #fbb72c;
 }
 
 /*------- CONTENT ASSET SECTION --------*/
@@ -519,10 +531,9 @@ footer h3 span {
 /*---------- FOR LESS THAN 480PX WIDTH ----------*/
 
 @media (max-width: 930px) {
-  /* .span_1_of_3 {
-    width: 40%;
-    text-align: center;
-  } */
+  .span_1_of_3 {
+    width: 48%;
+  }
 
   /*------- FOOTER --------*/
 
