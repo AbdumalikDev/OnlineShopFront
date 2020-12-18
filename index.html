@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online market</title>
+    <title>Family Store</title>
 
     <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,6 +26,14 @@
   <body>
     <nav>
       <div class="row">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
         <div class="nav-left">
           <ul class="main-nav">
             <li><a href="#" class="nav-link">Men</a></li>
@@ -33,9 +41,12 @@
             <li><a href="#" class="nav-link">Kids</a></li>
             <li><a href="#" class="nav-link">Gifts</a></li>
           </ul>
+          <label for="nav-check">
+            <i class="fa fa-chevron-left"></i>
+          </label>
         </div>
         <div class="brand-name">
-          <a href="#">OnlineStore</a>
+          <a href="#">FamilyStore</a>
         </div>
         <div class="nav-right">
           <ul class="main-nav">
@@ -46,7 +57,8 @@
             </li>
             <li class="dropdown">
               <a href="#" class="nav-link">
-                &VerticalLine; &nbsp;&nbsp;&nbsp;&nbsp; Account
+                <span> &VerticalLine; &nbsp;&nbsp;&nbsp;&nbsp; Account </span>
+
                 <i class="fa fa-user icon-white"></i>
               </a>
               <div class="dropdown-content">
@@ -55,9 +67,10 @@
               </div>
             </li>
             <li>
-              <a href="#" class="nav-link"
-                >Cart <i class="fa fa-cart-plus fa-regular"></i> <sup>2</sup></a
-              >
+              <a href="#" class="nav-link">
+                <span> Cart </span> <i class="fa fa-shopping-cart"></i>
+                <sup>2</sup>
+              </a>
             </li>
           </ul>
         </div>
@@ -79,6 +92,80 @@
 
     <section>
       <div class="row">
+        <h2>shop by catagory</h2>
+      </div>
+      <div class="row">
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/Men.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/img1.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/img4.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/Men1.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/img7.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="span_1_of_3">
+          <div class="product-card">
+            <div class="product-tumb">
+              <img src="img/img2.jpg" alt="Womens bag" />
+            </div>
+
+            <div class="product-details">
+              <h4><a href="#">mens Apparel</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
         <h2>Featured products</h2>
       </div>
 
@@ -86,8 +173,11 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
-              <img src="img/bag.png" alt="Womens bag" />
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
+              <img src="img/product1.png" alt="Womens bag" />
             </div>
             <div class="product-details">
               <span class="product-catagory">Women, bag</span>
@@ -100,7 +190,6 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="##"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
@@ -109,7 +198,10 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
               <img src="img/bag.png" alt="Womens bag" />
             </div>
             <div class="product-details">
@@ -123,7 +215,6 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
@@ -132,8 +223,11 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
-              <img src="img/bag.png" alt="Womens bag" />
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
+              <img src="img/short.jpg" alt="Womens bag" />
             </div>
             <div class="product-details">
               <span class="product-catagory">Women, bag</span>
@@ -146,7 +240,6 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
@@ -155,8 +248,11 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
-              <img src="img/bag.png" alt="Womens bag" />
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
+              <img src="img/short1.jpg" alt="Womens bag" />
             </div>
             <div class="product-details">
               <span class="product-catagory">Women, bag</span>
@@ -169,7 +265,6 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
@@ -178,7 +273,10 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
               <img src="img/bag.png" alt="Womens bag" />
             </div>
             <div class="product-details">
@@ -192,7 +290,6 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
@@ -201,7 +298,10 @@
         <div class="span_1_of_3">
           <div class="product-card">
             <div class="badge">New</div>
+
             <div class="product-tumb">
+              <a href="#" class="btn btn-white">Shop now</a>
+              <a href="#" class="btn btn-white">Add to cart</a>
               <img src="img/bag.png" alt="Womens bag" />
             </div>
             <div class="product-details">
@@ -215,12 +315,12 @@
                 <div class="product-price"><small>$96.00</small>$230.99</div>
                 <div class="product-links">
                   <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="more"><a href="#" class="btn btn-white"> Load more</a></div>
       </div>
     </section>
 
@@ -250,7 +350,7 @@
 
     <footer>
       <div class="footer-left">
-        <h3>Online<span>Store</span></h3>
+        <h3>Family<span>Store</span></h3>
 
         <div class="footer-links">
           <a href="#">Home</a>

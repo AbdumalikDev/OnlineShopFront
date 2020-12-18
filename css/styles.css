@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: 170%;
+  font-size: 150%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
@@ -76,8 +76,9 @@ h2::after {
   height: 50px;
   text-align: center;
   display: inline-block;
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 13px 0;
+  text-transform: uppercase;
+  font-size: 17px;
   text-decoration: none;
   transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
@@ -122,10 +123,16 @@ nav {
   z-index: 1;
 }
 
+.nav-btn,
+#nav-check,
+.nav-left i {
+  display: none;
+}
+
 .brand-name {
-  width: 5%;
+  width: 25%;
   font-family: 'Cookie', cursive;
-  margin-top: 20px;
+  margin-top: 15px;
   display: inline-block;
 }
 
@@ -144,12 +151,12 @@ nav {
 }
 
 .nav-left {
-  width: 40%;
+  width: 35%;
   float: left;
 }
 
 .nav-right {
-  width: 40%;
+  width: 35%;
   float: right;
   text-align: right;
 }
@@ -160,16 +167,8 @@ nav {
 }
 
 .main-nav li {
-  margin-left: 30px;
+  margin: 0 15px;
   display: inline-block;
-}
-
-.nav-left li:first-child {
-  margin-left: 15px;
-}
-
-.nav-right li:last-child {
-  margin-right: 15px;
 }
 
 .nav-link {
@@ -253,6 +252,10 @@ nav {
 
 /*------- FEATURED PRODUCTS -------*/
 
+.more {
+  text-align: center;
+}
+
 .product-card {
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
@@ -280,13 +283,31 @@ nav {
   height: 250px;
   padding: 50px;
   background: #f0f0f0;
-  transition: padding 0.3s;
 }
 
+.product-tumb a.btn {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-tumb a:nth-child(1) {
+  top: 20%;
+}
+
+.product-tumb a:nth-child(2) {
+  top: 32%;
+}
+/* 
 .product-tumb:hover {
   background: rgba(0, 0, 0, 0.2);
   padding: 40px;
   transition: all 0.3s;
+} */
+
+.product-tumb:hover a.btn-white {
+  display: block;
 }
 
 .product-tumb img {
@@ -359,10 +380,9 @@ nav {
 
 .product-links a {
   display: inline-block;
-  margin-left: 5px;
   color: #e1e1e1;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .product-links a:hover {
@@ -531,8 +551,122 @@ footer h3 span {
 /*---------- FOR LESS THAN 480PX WIDTH ----------*/
 
 @media (max-width: 930px) {
+  /*------- REUSABLE COMPONENTS --------*/
+
   .span_1_of_3 {
     width: 48%;
+  }
+
+  /*------- NAVBAR --------*/
+
+  .nav-btn {
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+  }
+
+  .nav-btn label {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 20px;
+    padding: 5px;
+  }
+
+  .nav-btn label:hover,
+  #nav-check:checked ~ .nav-btn label {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  #nav-check:checked ~ .nav-left {
+    display: inline-block;
+  }
+
+  .nav-btn span {
+    display: block;
+    width: 15px;
+    height: 5px;
+    border-top: 1px solid #000;
+  }
+
+  .nav-left {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    width: 80%;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  .nav-left li {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .nav-left .nav-link {
+    padding: 0 10px;
+  }
+
+  .nav-left .nav-link::after,
+  .nav-left .nav-link:hover::after {
+    all: unset;
+  }
+
+  .nav-left i {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #000;
+  }
+
+  nav {
+    height: 50px;
+  }
+
+  .brand-name {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  .brand-name a:link,
+  .brand-name a:visited {
+    all: unset;
+    cursor: pointer;
+    font-size: 200%;
+  }
+
+  .nav-right span {
+    display: none;
+  }
+
+  .nav-right li {
+    margin: 0 5px;
+  }
+
+  .main-nav {
+    margin-top: 15px;
+  }
+
+  /* DROPDOWN LINK */
+  .dropdown-content {
+    display: none !important;
+    position: absolute;
+    background-color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown-content a {
+    margin: 10px 30px;
+  }
+
+  .dropdown-content a:first-child:hover,
+  .dropdown-content a:first-child:active {
+    background-color: rgba(13, 187, 13, 0.7);
+    border: 2px solid rgba(13, 187, 13, 0.7);
   }
 
   /*------- FOOTER --------*/
@@ -554,11 +688,6 @@ footer h3 span {
     margin-left: 0;
   }
 }
-
-/* h3 {
-  font-size: 110%;
-  margin-bottom: 15px;
-} */
 
 /* PARAGRAPHS */
 /* 
