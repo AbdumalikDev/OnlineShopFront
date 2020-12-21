@@ -116,7 +116,6 @@ h2::after {
 nav {
   height: 90px;
   background-color: #fff;
-  vertical-align: top;
   position: sticky;
   top: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -205,12 +204,12 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content a {
+.dropdown-content .btn {
   margin: 10px 30px;
 }
 
-.dropdown-content a:first-child:hover,
-.dropdown-content a:first-child:active {
+.dropdown-content .btn-white:hover,
+.dropdown-content .btn-white:active {
   background-color: rgba(13, 187, 13, 0.7);
   border: 2px solid rgba(13, 187, 13, 0.7);
 }
@@ -223,11 +222,11 @@ nav {
 /*------- HEADER --------*/
 
 .landing {
-  margin-top: 20px;
+  margin: 20px 30px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../img/bg/family.jpg);
+    url(../img/bg/Shopping.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 80vh;
 }
 
@@ -395,7 +394,7 @@ nav {
 
 /*------- CONTENT ASSET SECTION --------*/
 
-.content-asset {
+.content {
   background-color: #000;
   color: #fff;
   padding: 40px 0;
@@ -405,14 +404,14 @@ nav {
   text-align: center;
 }
 
-.content {
+.content-asset {
   display: inline-block;
   width: 23%;
   vertical-align: middle;
   margin: 0 7px;
 }
 
-.content p {
+.content-asset p {
   display: inline-block;
   width: 70%;
   text-align: left;
@@ -420,7 +419,7 @@ nav {
   vertical-align: middle;
 }
 
-.content i {
+.content-asset i {
   vertical-align: middle;
   font-size: 35px;
 }
@@ -661,11 +660,11 @@ footer h3 span {
 
   /*------- CONTENT ASSET SECTION --------*/
 
-  .content-asset {
+  .content {
     padding: 20px 0;
   }
 
-  .content {
+  .content-asset {
     width: 42%;
     margin: 15px 0;
   }
@@ -695,7 +694,7 @@ footer h3 span {
     padding: 20px 0;
   }
 
-  .content {
+  .content-asset {
     width: 100%;
   }
 
@@ -832,4 +831,115 @@ footer h3 span {
 }
 #search-input:not(:valid) ~ .clear-icon {
   display: none;
+} */
+
+/*------- LOGIN PAGE --------*/
+
+.landing-login {
+  margin: 20px 30px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/bg/login2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+}
+
+.container-login {
+  margin-left: 30px;
+  height: 800px;
+  width: 700px;
+  background-color: #eee;
+  text-transform: uppercase;
+}
+
+.tab {
+  width: 80%;
+  margin: 0 80px 40px;
+}
+
+.tab button {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 250px;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+.tab-content {
+  margin-left: 80px;
+  font-size: 70%;
+}
+
+.tab-content h1 {
+  color: #000;
+  margin-bottom: 20px;
+  margin-left: 110px;
+}
+
+.tab-content input {
+  margin: 10px 0 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 500px;
+  height: 45px;
+  display: block;
+}
+.tab-content label {
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+#check {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tab-content a.btn-black {
+  display: block;
+  width: 200px;
+}
+
+.tab-content h3 {
+  font-size: 130%;
+  margin-top: 20px;
+  margin-left: 180px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.btn-facebook {
+  background-color: #3b61b3;
+}
+
+.btn-google {
+  background-color: #f74e38;
+}
+.btn-facebook,
+.btn-google {
+  margin: 20px 5px;
+  width: 250px !important;
+  height: 55px !important;
+  padding-top: 17px !important;
+  color: #fff;
+}
+
+/* .tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 } */

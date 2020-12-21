@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Store /Login</title>
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-left">
+          <ul class="main-nav">
+            <li><a href="#" class="nav-link">Men</a></li>
+            <li><a href="#" class="nav-link">Women</a></li>
+            <li><a href="#" class="nav-link">Kids</a></li>
+            <li><a href="#" class="nav-link">Gifts</a></li>
+          </ul>
+          <label for="nav-check">
+            <i class="fa fa-chevron-left"></i>
+          </label>
+        </div>
+        <div class="brand-name">
+          <a href="#">FamilyStore</a>
+        </div>
+        <div class="nav-right">
+          <ul class="main-nav">
+            <li>
+              <a href="#" class="nav-link">
+                <i class="fa fa-search icon-search"></i>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="nav-link">
+                <span> &VerticalLine; &nbsp;&nbsp;&nbsp;&nbsp; Account </span>
+
+                <i class="fa fa-user icon-white"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#" class="btn btn-white">Log in</a> <br />
+                <a href="#" class="btn btn-black">sign up</a>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span> Cart </span> <i class="fa fa-shopping-cart"></i>
+                <sup>2</sup>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="landing-login">
+      <div class="row">
+        <div class="container-login">
+          <div class="tab">
+            <button class="tab-links">Login</button>
+            <button class="tab-links">Create Account</button>
+          </div>
+          <div id="login" class="tab-content">
+            <h1>Welcome back</h1>
+            <label for="email">*Email</label>
+            <input id="email" type="email" placeholder="Email" required />
+            <label for="password">*Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <input type="checkbox" name="" id="check" />
+            <label for="check">Remember me</label>
+            <a href="/" class="btn btn-black">Sign in</a>
+            <h3>Express sign in</h3>
+            <a href="/" class="btn btn-facebook">
+              <i class="fab fa-facebook"></i> facebook
+            </a>
+            <a href="/" class="btn btn-google">
+              <i class="fab fa-google"></i> Google
+            </a>
+          </div>
+          <!-- <div id="signup" class="tab-content">
+            <label for="fName">*First Name</label>
+            <input id="fName" type="text" />
+            <label for="lName">Last Name</label>
+            <input id="lName" type="text" />
+            <label for="email">*Email</label>
+            <input id="email" type="email" />
+            <label for="LName">*Password</label>
+            <input id="password" type="password" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <div class="content-asset">
+          <i class="fa fa-shipping-fast"></i>
+          <p>Free &amp; fast Shipping</p>
+        </div>
+
+        <div class="content-asset">
+          <i class="fa fa-redo"></i>
+          <p>Free returns on orders over $50</p>
+        </div>
+
+        <div class="content-asset">
+          <i class="fa fa-certificate"></i>
+          <p>24 month warranty on all products</p>
+        </div>
+
+        <div class="content-asset">
+          <i class="fa fa-shield-alt"></i>
+          <p>100% safe &amp; secure checkout</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <h3>Family<span>Store</span></h3>
+
+        <div class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">News</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </div>
+
+        <p class="footer-company-name">FamilyStore &copy; 2021</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21 Amir Temur Street</span> Tashkent, Uzbekistan</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p><a href="#">+998 93 054 47 49</a></p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="hojimirzaevabdumalik@gmail.com">contact@admin.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Online Store is a convenient market for everyone, you can buy and sell
+          products, &amp; make money.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
