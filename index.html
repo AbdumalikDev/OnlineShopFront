@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Family Store</title>
+    <title>Family Store | Bosh sahifa</title>
 
     <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -24,355 +24,452 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="top-nav">
+      <div class="row">
+        <ul>
+          <li><a href="#" class="nav-link">Muddatli to'lov</a></li>
+          <li><a href="#" class="nav-link">Yetkazib berish</a></li>
+          <li><a href="#" class="nav-link">To'lov</a></li>
+          <li><a href="#" class="nav-link">Biz haqimizda</a></li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="far fa-heart"></i> &nbsp; Yoqtirilgan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <nav>
       <div class="row">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
         <div class="nav-left">
-          <ul class="main-nav">
-            <li><a href="#" class="nav-link">Men</a></li>
-            <li><a href="#" class="nav-link">Women</a></li>
-            <li><a href="#" class="nav-link">Kids</a></li>
-            <li><a href="#" class="nav-link">Gifts</a></li>
-          </ul>
-          <label for="nav-check">
-            <i class="fa fa-chevron-left"></i>
-          </label>
-        </div>
-        <div class="brand-name">
-          <a href="#">FamilyStore</a>
+          <div class="check-box">
+            <input type="checkbox" id="nav-check" />
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="brand-name">
+            <a href="/index.html">OnlineStore</a>
+          </div>
+
+          <form class="search-form" action="" method="get">
+            <input
+              type="search"
+              name="search"
+              id="search-input"
+              placeholder="Mahsulotni tez va oson toping..."
+              required
+            />
+
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
         </div>
         <div class="nav-right">
-          <ul class="main-nav">
+          <ul>
             <li>
               <a href="#" class="nav-link">
-                <i class="fa fa-search icon-search"></i>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="/login.html" class="nav-link">
-                <span> | &nbsp;&nbsp;&nbsp;&nbsp; Account </span>
-
-                <i class="fa fa-user icon-white"></i>
-              </a>
-              <div class="dropdown-content">
-                <a href="/login.html" class="btn btn-white">Log in</a> <br />
-                <a href="/login.html" class="btn btn-black">sign up</a>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-link">
-                <span> Cart </span> <i class="fa fa-shopping-cart"></i>
+                <span> Savatcha </span>
+                <i class="fa fa-shopping-cart"></i>
                 <sup>2</sup>
               </a>
+            </li>
+            <li>
+              <a href="/login.html" class="nav-link">
+                <span> | &nbsp;&nbsp;&nbsp;&nbsp; Hisobim </span>
+
+                <i class="far fa-user"></i>
+              </a>
+              <div class="dropdown-container">
+                <div class="dropdown-content">
+                  <a href="/login.html" class="btn btn-white">Kirish</a>
+                  <a href="/login.html" class="btn btn-black">
+                    Ro'yxatdan o'tish
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="landing">
-      <div class="hero-text-box">
-        <h1>
-          This is your best <br />
-          choice to shop here
-        </h1>
-        <div class="landing-btn">
-          <a href="#" class="btn btn-white">Shop mens </a>
-          <a href="#" class="btn btn-white">Shop womens </a>
+    <section class="landing landing-home">
+      <div class="row">
+        <div class="container-home">
+          <a href="#" class="btn btn-black"> Erkaklar uchun </a>
+          <a href="#" class="btn btn-black"> Ayollar uchun </a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="row">
-        <h2>shop by catagory</h2>
+        <h2>Ommabop toifalar</h2>
       </div>
+      <div class="row product-wrapper">
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <h4><a href="#">Smartfonlar</a></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="row">
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/Men.jpg" alt="Womens bag" />
-            </div>
+        <h2>Yangi mahsulotlar</h2>
+      </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+      <div class="row product-wrapper">
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category"> Samsung Smartfonlari </span>
+            </a>
+            <h4>
+              <a href="/product.html">Samsung Galaxy S10 Black</a>
+            </h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/img1.jpg" alt="Womens bag" />
-            </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/img4.jpg" alt="Womens bag" />
-            </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/Men1.png" alt="Womens bag" />
-            </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/img5.jpg" alt="Womens bag" />
-            </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="product-tumb">
-              <img src="img/img6.jpg" alt="Womens bag" />
-            </div>
 
-            <div class="product-details">
-              <h4><a href="#">mens Apparel</a></h4>
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">Yangi</div>
+          <a href="/">
+            <span class="product-tumb">
+              <img src="img/product1.png" alt="Samsung Galaxy S10" />
+            </span>
+          </a>
+          <div class="product-details">
+            <a href="/">
+              <span class="product-category">Samsung Smartfonlari</span>
+            </a>
+            <h4><a href="/product.html">Samsung Galaxy S10 Black</a></h4>
+            <div class="product-bottom-details">
+              <div class="product-price">
+                <small>4,260,000 so'm</small> 2,300,000 so'm
+              </div>
+              <div class="product-links">
+                <button type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button type="button"><i class="fa fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="more">
+          <a href="#" class="btn btn-white"> Ko'proq yuklash </a>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="row">
-        <h2>Featured products</h2>
-      </div>
-
-      <div class="row">
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/product1.png" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/bag.png" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/short.jpg" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/short1.jpg" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/bag.png" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="span_1_of_3">
-          <div class="product-card">
-            <div class="badge">New</div>
-
-            <div class="product-tumb">
-              <a href="#" class="btn btn-white">Shop now</a>
-              <a href="#" class="btn btn-white">Add to cart</a>
-              <img src="img/bag.png" alt="Womens bag" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Women, bag</span>
-              <h4><a href="#">Women leather bag</a></h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-                possimus nostrum!
-              </p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$96.00</small>$230.99</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="more"><a href="#" class="btn btn-white"> Load more</a></div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content">
-        <div class="content-asset">
+      <div class="content-wrapper">
+        <div>
           <i class="fa fa-shipping-fast"></i>
-          <p>Free &amp; fast Shipping</p>
+          <p>Tez &amp; Xavfsiz yetkazib berish</p>
         </div>
 
-        <div class="content-asset">
+        <div>
           <i class="fa fa-redo"></i>
-          <p>Free returns on orders over $50</p>
+          <p>1 oy ichida to'lovni qaytarib olish</p>
         </div>
 
-        <div class="content-asset">
+        <div>
           <i class="fa fa-certificate"></i>
-          <p>24 month warranty on all products</p>
+          <p>Har bir mahsulotga 24 oy garantiya</p>
         </div>
 
-        <div class="content-asset">
+        <div>
           <i class="fa fa-shield-alt"></i>
-          <p>100% safe &amp; secure checkout</p>
+          <p>100% Xavfsiz &amp; oson to'lov</p>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="footer-left">
-        <h3>Family<span>Store</span></h3>
+        <h3>Online<span>Store</span></h3>
 
         <div class="footer-links">
-          <a href="#">Home</a>
+          <a href="#">Bosh sahifa</a>
           ·
-          <a href="#">News</a>
+          <a href="#">Yangiliklar</a>
           ·
-          <a href="#">Pricing</a>
+          <a href="#">Arzon Narxlar</a>
           ·
-          <a href="#">About</a>
+          <a href="#">Biz haqimizda</a>
           ·
-          <a href="#">Faq</a>
-          ·
-          <a href="#">Contact</a>
+          <a href="#">Biz bilan bog'lanish</a>
         </div>
 
-        <p class="footer-company-name">FamilyStore &copy; 2021</p>
+        <p class="footer-company-name">OnlineStore &copy; 2021</p>
       </div>
 
       <div class="footer-center">
@@ -396,7 +493,7 @@
 
       <div class="footer-right">
         <p class="footer-company-about">
-          <span>About the company</span>
+          <span>Sayt haqida</span>
           Online Store is a convenient market for everyone, you can buy and sell
           products, &amp; make money.
         </p>
@@ -412,35 +509,14 @@
   </body>
 </html>
 
-<!-- <form>
-  <a href="#" class="">
-    <i class="fa fa-search icon-search"></i>
-  </a>
-  <input
-    type="search"
-    name="search"
-    id="search-input"
-    placeholder="Search..."
-    autocomplete="off"
-    required
-  />
-  <button class="clear-icon" type="reset"></button>
-</form> -->
-
-<!-- <div class="span_1_of_3">
-  <div class="product-card">
-    <div class="product-tumb">
-      <img src="img/bag.png" alt="product" />
-    </div>
-    <span class="product-catagory">Women, bag</span>
-
-    <div class="product-details">
-      <h4><a href="#">Women leather bag</a></h4>
-      <div class="product-bottom-details">
-        <div class="product-price"><small>$96.00</small>$78.99</div>
-        <a href="#" class="btn btn-white">Shop now </a>
-        <a href="#" class="btn btn-white">Add to cart </a>
-      </div>
-    </div>
-  </div>
-</div> -->
+<!-- <div class="nav-left">
+          <ul class="main-nav">
+            <li><a href="#" class="nav-link">Erkaklar</a></li>
+            <li><a href="#" class="nav-link">Ayollar</a></li>
+            <li><a href="#" class="nav-link">Bolalar</a></li>
+            <li><a href="#" class="nav-link">Sovg'alar</a></li>
+          </ul>
+          <label for="nav-check">
+            <i class="fa fa-chevron-left"></i>
+          </label>
+        </div> -->

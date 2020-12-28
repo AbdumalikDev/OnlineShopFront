@@ -24,80 +24,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="row">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-left">
-          <ul class="main-nav">
-            <li><a href="#" class="nav-link">Men</a></li>
-            <li><a href="#" class="nav-link">Women</a></li>
-            <li><a href="#" class="nav-link">Kids</a></li>
-            <li><a href="#" class="nav-link">Gifts</a></li>
-          </ul>
-          <label for="nav-check">
-            <i class="fa fa-chevron-left"></i>
-          </label>
-        </div>
-        <div class="brand-name">
-          <a href="#">FamilyStore</a>
-        </div>
-        <div class="nav-right">
-          <ul class="main-nav">
-            <li>
-              <a href="#" class="nav-link">
-                <i class="fa fa-search icon-search"></i>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="nav-link">
-                <span> &VerticalLine; &nbsp;&nbsp;&nbsp;&nbsp; Account </span>
-
-                <i class="fa fa-user icon-white"></i>
-              </a>
-              <div class="dropdown-content">
-                <a href="#" class="btn btn-white">Log in</a> <br />
-                <a href="#" class="btn btn-black">sign up</a>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="nav-link">
-                <span> Cart </span> <i class="fa fa-shopping-cart"></i>
-                <sup>2</sup>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="landing-login">
+    <section class="landing landing-login">
       <div class="row">
         <div class="container-login">
           <div class="tab">
             <button class="tab-links">Login</button>
             <button class="tab-links">Create Account</button>
           </div>
+
           <div id="login" class="tab-content">
             <h1>Welcome back</h1>
-            <label for="email">*Email</label>
-            <input id="email" type="email" placeholder="Email" required />
-            <label for="password">*Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              required
-            />
-            <input type="checkbox" name="" id="check" />
-            <label for="check">Remember me</label>
-            <a href="/" class="btn btn-black">Sign in</a>
+            <form action="/login.html" method="post">
+              <label for="email">*Email</label>
+              <input id="email" type="email" placeholder="Email" required />
+              <label for="password">*Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <input type="checkbox" name="" id="check" />
+              <label for="check">Remember me</label>
+              <button type="submit" class="btn-real">Sign in</button>
+            </form>
             <h3>Express sign in</h3>
             <a href="/" class="btn btn-facebook">
               <i class="fab fa-facebook"></i> facebook
@@ -106,15 +56,39 @@
               <i class="fab fa-google"></i> Google
             </a>
           </div>
-          <!-- <div id="signup" class="tab-content">
-            <label for="fName">*First Name</label>
-            <input id="fName" type="text" />
-            <label for="lName">Last Name</label>
-            <input id="lName" type="text" />
-            <label for="email">*Email</label>
-            <input id="email" type="email" />
-            <label for="LName">*Password</label>
-            <input id="password" type="password" />
+
+          <!-- <div id="register" class="tab-content">
+            <h3>Express sign up</h3>
+            <a href="/" class="btn btn-facebook">
+              <i class="fab fa-facebook"></i> facebook
+            </a>
+            <a href="/" class="btn btn-google">
+              <i class="fab fa-google"></i> Google
+            </a>
+            <h3>or</h3>
+            <form action="/" method="post">
+              <label for="fName">*First Name</label>
+              <input
+                id="fName"
+                type="text"
+                placeholder="Your First Name"
+                required
+              />
+              <label for="lName">Last Name</label>
+              <input id="lName" type="text" placeholder="Your Last Name" />
+              <label for="email">*Email</label>
+              <input id="email" type="email" placeholder="Email" required />
+              <label for="password">*Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <input type="checkbox" name="" id="check" />
+              <label for="check">Remember me</label>
+              <button type="submit" class="btn-real">Create Account</button>
+            </form>
           </div> -->
         </div>
       </div>
