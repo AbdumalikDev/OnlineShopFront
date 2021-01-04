@@ -1,0 +1,211 @@
+.landing-login {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/bg/login2.jpg);
+  height: 1000px;
+}
+
+.container-login {
+  margin-left: 20px;
+  height: 900px;
+  width: 700px;
+  background-color: #eee;
+  text-transform: uppercase;
+}
+
+.tab {
+  padding: 20px 80px 40px;
+}
+
+.tab button {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  width: 250px;
+  height: 55px;
+  font-size: 90%;
+}
+
+.tab-content {
+  margin-left: 80px;
+}
+
+.tab-content h1 {
+  color: #000;
+  font-size: 150%;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.tab-content input {
+  margin: 10px 0 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 500px;
+  height: 45px;
+  display: block;
+}
+.tab-content label {
+  padding-bottom: 20px;
+  font-size: 70%;
+}
+
+#check {
+  margin-right: 5px;
+  margin-top: 17px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#check ~ label {
+  cursor: pointer;
+}
+
+.tab-content .btn-real {
+  margin-top: 5px;
+  display: block;
+  width: 220px;
+  height: 55px;
+  padding-top: 17px !important;
+  margin-bottom: 20px;
+}
+
+.tab-content h3 {
+  font-weight: bold;
+  font-size: 90%;
+  width: 80%;
+  text-align: center;
+}
+
+.tab-content .btn-google ~ h3 {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.btn-facebook,
+.btn-google {
+  margin: 20px 10px 20px 0;
+  width: 245px !important;
+  height: 55px !important;
+  padding-top: 17px !important;
+  color: #fff;
+}
+
+.btn-facebook:link,
+.btn-facebook:visited {
+  background-color: #3b61b3;
+}
+
+.btn-google:link,
+.btn-google:visited {
+  background-color: #f74e38;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active {
+  background-color: #0f3da0;
+}
+
+.btn-google:hover,
+.btn-google:active {
+  background-color: #d42b15;
+}
+
+/*---------- FOR LESS THAN 480PX WIDTH ----------*/
+
+@media (max-width: 930px) {
+  .container-login {
+    width: 450px;
+  }
+
+  .tab {
+    padding: 20px 20px 40px;
+  }
+
+  .tab button {
+    width: 200px;
+    height: 35px;
+  }
+
+  .tab-content {
+    margin-left: 20px;
+  }
+
+  .tab-content h1 {
+    font-size: 130%;
+    width: 90%;
+  }
+
+  .tab-content input {
+    width: 400px;
+  }
+
+  .tab-content .btn-real {
+    width: 190px;
+  }
+
+  .tab-content h3 {
+    width: 92%;
+  }
+
+  .btn-facebook,
+  .btn-google {
+    width: 195px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  /*------- LOGIN PAGE --------*/
+
+  .container-login {
+    margin-left: 10px;
+    height: 900px;
+    width: 300px;
+  }
+  /* 
+  .tab {
+    padding: 20px 20px 40px;
+  } */
+
+  .tab button {
+    padding-bottom: 10px;
+    width: 125px;
+    font-size: 60%;
+  }
+
+  .tab-content h1 {
+    font-size: 110%;
+  }
+
+  .tab-content input {
+    width: 250px;
+  }
+
+  .tab-content h3 {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .btn-facebook,
+  .btn-google {
+    margin: 0 0 15px 30px;
+  }
+}
+
+/* .tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} */
