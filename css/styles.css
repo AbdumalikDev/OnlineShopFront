@@ -37,8 +37,7 @@ h3 {
 
 h1 {
   margin-bottom: 10px;
-  color: #fff;
-  font-size: 240%;
+  font-size: 150%;
   word-spacing: 4px;
 }
 
@@ -305,11 +304,7 @@ nav > .row {
   margin-top: 40px;
 }
 
-.more > .btn {
-  width: 220px;
-}
-
-.product-wrapper {
+.products-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -550,6 +545,11 @@ footer p {
 @media (max-width: 930px) {
   /*------- NAVBAR --------*/
 
+  .landing {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
   .top-nav {
     display: none;
   }
@@ -667,7 +667,7 @@ footer p {
     display: none;
   }
 
-  .product-wrapper {
+  .products-wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 10px 20px 0;
@@ -722,11 +722,6 @@ footer p {
 }
 
 @media (max-width: 569px) {
-  .landing {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-
   .landing-home {
     height: 300px;
     margin-bottom: 210px;
@@ -761,7 +756,7 @@ footer p {
     font-size: 10px;
   }
 
-  .product-wrapper {
+  .products-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 
