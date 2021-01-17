@@ -205,7 +205,7 @@ nav > .row {
 
 .nav-right li,
 .top-nav li {
-  margin: 0 10px;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -232,7 +232,8 @@ nav > .row {
   width: 100%;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:hover > i {
   color: #ff621a;
 }
 
