@@ -309,24 +309,32 @@ nav > .row {
   margin-top: 40px;
 }
 
-.products-wrapper {
+.card-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 40px 20px 0;
 }
 
-.product-card {
-  position: relative;
+.card {
   box-shadow: 0 2px 7px #dfdfdf;
   background: #fafafa;
 }
 
-.product-card a {
+/* .card > div {
+  border: 1px solid #000;
+} */
+
+.card a {
   text-decoration: none;
 }
 
-.badge {
+.card-head {
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.card-badge {
   position: absolute;
   left: 0;
   top: 10px;
@@ -338,65 +346,68 @@ nav > .row {
   padding: 3px 10px;
 }
 
-.product-tumb {
+.card-img {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 250px;
-  background-color: #f0f0f0;
+  /* background-color: #fff; */
 }
 
-.product-tumb img {
+.card-img img {
+  padding: 10px;
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s;
 }
 
-.product-tumb:hover img {
-  max-width: 110%;
-  max-height: 110%;
+.card-img:hover img {
+  padding: 0;
 }
 
-.product-details {
+.card-body,
+.card-category {
   padding: 5px 15px 15px;
 }
 
-.product-category {
+.card-body {
+  display: grid;
+  height: 220px;
+}
+
+.card-body-subtitle {
   display: inline-block;
   font-size: 70%;
   font-weight: 600;
   color: #b7b7b7;
-  margin-bottom: 10px;
 }
 
-.product-details h4 > a {
+.card h4 > a {
   display: block;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: #363636;
   transition: 0.3s;
 }
 
-.product-details h4 a:hover,
-.product-category:hover {
+.card h4 a:hover,
+.card-body-subtitle:hover {
   color: #fbb72c;
 }
 
-.product-bottom-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+.card-body-details {
+  align-self: flex-end;
   border-top: 1px solid #dadada;
   padding-top: 10px;
 }
 
-.product-price {
+.card-price {
   line-height: 120%;
   font-size: 20px;
   font-weight: 600;
 }
 
-.product-price small {
+.card-price small {
   color: #808080;
   font-size: 80%;
   font-weight: 400;
@@ -404,12 +415,13 @@ nav > .row {
   display: block;
 }
 
-.product-links {
+.card-links {
+  padding-top: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.product-links > button {
+.card-links > button {
   width: 40px;
   height: 40px;
   font-size: 19px;
@@ -421,11 +433,11 @@ nav > .row {
   transition: 0.3s;
 }
 
-.product-links > button:last-of-type {
+.card-links > button:last-of-type {
   justify-self: right;
 }
 
-.product-links button:hover {
+.card-links button:hover {
   color: #fbb72c;
   font-size: 23px;
 }
@@ -642,7 +654,7 @@ footer p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   h2 {
     font-size: 110%;
   }
@@ -672,46 +684,50 @@ footer p {
     display: none;
   }
 
-  .products-wrapper {
+  .card-wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 10px 20px 0;
   }
 
-  .product-tumb {
+  .card-img {
     height: 150px;
   }
 
-  .product-details {
+  .card-body,
+  .card-category {
     padding: 10px;
   }
 
-  .product-category {
-    font-size: 55%;
-    margin-bottom: 5px;
+  .card-body {
+    height: 180px;
   }
 
-  .product-details h4 > a {
+  .card-body-subtitle {
+    font-size: 55%;
+  }
+
+  .card h4 > a {
     font-size: 80%;
     margin-bottom: 10px;
   }
 
-  .product-bottom-details {
+  .card-body-details {
     gap: 10px;
     padding-top: 5px;
   }
 
-  .product-price {
+  .card-price {
     font-size: 16px;
   }
 
-  .product-links > button {
+  .card-links > button {
     width: 30px;
     height: 30px;
     font-size: 15px;
   }
 
-  .product-links button:hover {
+  .card-links button:hover {
     font-size: 18px;
   }
 
@@ -753,15 +769,11 @@ footer p {
     padding: 20px 0;
   }
 
-  .content-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .badge {
+  .card-badge {
     font-size: 10px;
   }
 
-  .products-wrapper {
+  .card-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 

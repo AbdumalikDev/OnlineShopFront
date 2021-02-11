@@ -11,7 +11,8 @@
   text-transform: uppercase;
 }
 
-.tab-content:last-child {
+#login,
+#register {
   padding-bottom: 100px;
 }
 
@@ -28,6 +29,7 @@
   width: 250px;
   height: 55px;
   font-size: 90%;
+  outline: none;
 }
 
 .tab-content h1 {
@@ -53,7 +55,8 @@
   font-size: 70%;
 }
 
-#check {
+#check1,
+#check2 {
   cursor: pointer;
   margin-right: 5px;
   margin-top: 17px;
@@ -63,7 +66,8 @@
   vertical-align: middle;
 }
 
-#check ~ label {
+#check1 ~ label,
+#check2 ~ label {
   cursor: pointer;
 }
 

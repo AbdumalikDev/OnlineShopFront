@@ -127,40 +127,6 @@
             <button>Hisob yaratish</button>
           </div>
 
-          <!-- <div id="login" class="tab-content">
-            <h1>Xush kelibsiz!</h1>
-            <form action="/login.html" method="post">
-              <label for="email">*Email</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Elektron pochtangizni kiriting"
-                required
-              />
-              <label for="password">*Parol</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="Parolni kiriting"
-                required
-              />
-              <input type="checkbox" name="" id="check" />
-              <label for="check">Eslab qol</label>
-              <button type="submit" class="btn-real btn-real-black">
-                Kirish
-              </button>
-            </form>
-            <div>
-              <h3>Tez kirish</h3>
-              <a href="/" class="btn btn-facebook">
-                <i class="fab fa-facebook"></i> facebook
-              </a>
-              <a href="/" class="btn btn-google">
-                <i class="fab fa-google"></i> Google
-              </a>
-            </div>
-          </div> -->
-
           <div id="register" class="tab-content">
             <div>
               <h3>Tez ro'yxatdan o'tish</h3>
@@ -174,39 +140,67 @@
             </div>
 
             <form action="/" method="post">
-              <label for="fName">*Ism</label>
+              <label for="fullName">To'liq ism</label>
               <input
-                id="fName"
+                id="fullName"
                 type="text"
-                placeholder="Ismingizni kiriting"
+                placeholder="To'liq ismingizni kiriting"
                 required
               />
-              <label for="lName">Familiya</label>
+              <label for="email1">Email</label>
               <input
-                id="lName"
-                type="text"
-                placeholder="Familiyangizni kiriting"
-              />
-              <label for="email">*Email</label>
-              <input
-                id="email"
+                id="email1"
                 type="email"
                 placeholder="Elektron pochtangizni kiriting"
                 required
               />
-              <label for="password">*Parol</label>
+              <label for="password1">Parol</label>
               <input
-                id="password"
+                id="password1"
                 type="password"
                 placeholder="Parolingizni kiriting"
                 required
               />
-              <input type="checkbox" name="" id="check" />
-              <label for="check">Eslab qol</label>
+              <input id="check1" type="checkbox" />
+              <label for="check1">Eslab qol</label>
               <button type="submit" class="btn-real btn-real-black">
                 Hisob yaratish
               </button>
             </form>
+          </div>
+
+          <div id="login" class="tab-content" style="display: none;">
+            <h1>Xush kelibsiz!</h1>
+            <form action="/login.html" method="post">
+              <label for="email2">Email</label>
+              <input
+                id="email2"
+                type="email"
+                placeholder="Elektron pochtangizni kiriting"
+                required
+              />
+              <label for="password2">Parol</label>
+              <input
+                id="password2"
+                type="password"
+                placeholder="Parolni kiriting"
+                required
+              />
+              <input type="checkbox" name="" id="check2" />
+              <label for="check2">Eslab qol</label>
+              <button type="submit" class="btn-real btn-real-black">
+                Kirish
+              </button>
+            </form>
+            <div>
+              <h3>Tez kirish</h3>
+              <a href="/" class="btn btn-facebook">
+                <i class="fab fa-facebook"></i> facebook
+              </a>
+              <a href="/" class="btn btn-google">
+                <i class="fab fa-google"></i> Google
+              </a>
+            </div>
           </div>
         </div>
       </div>
