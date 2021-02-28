@@ -218,7 +218,6 @@ nav > .row {
   color: #000;
   text-decoration: none;
   font-size: 80%;
-  transition: font-size 0.2s;
 }
 
 .nav-link::after {
@@ -266,8 +265,8 @@ nav > .row {
 
 .dropdown-content .btn-white:hover,
 .dropdown-content .btn-white:active {
-  background-color: rgba(13, 187, 13, 0.7);
-  border: 2px solid rgba(13, 187, 13, 0.7);
+  background-color: rgba(99, 218, 99, 0.7);
+  border: 2px solid rgba(99, 218, 99, 0.7);
 }
 
 .nav-right li:last-child > a:hover ~ .dropdown-container,
@@ -275,10 +274,50 @@ nav > .row {
   display: block;
 }
 
+.nav-categ {
+  text-align: center;
+  background-color: #eee;
+  padding: 20px 10px;
+}
+
+.nav-categ a {
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: 300;
+  color: black;
+}
+
+.nav-categ > div {
+  display: inline-block;
+  cursor: pointer;
+  width: 130px;
+  margin-right: 40px;
+}
+
+.nav-categ > div::after {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  height: 2px;
+  width: 0px;
+  background: #ff621a;
+  transition: all 0.2s linear;
+}
+
+.nav-categ > div:hover::after {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+.nav-categ > div:hover > a {
+  color: #ff621a;
+}
+
 /*------- HEADER --------*/
 
 .landing {
-  margin: 20px 50px 0;
+  margin: 10px 50px 0;
   background-size: cover;
   background-position: center;
 }

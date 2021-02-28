@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Store /Kirish</title>
+    <title>Online Store | Savatcha</title>
 
     <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,20 +21,19 @@
       crossorigin="anonymous"
     />
 
-    <!-- Local Stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
   </head>
   <body>
     <div class="top-nav">
       <div class="row">
         <ul>
-          <li><a href="#" class="nav-link">Muddatli to'lov</a></li>
-          <li><a href="#" class="nav-link">Yetkazib berish</a></li>
-          <li><a href="#" class="nav-link">To'lov</a></li>
-          <li><a href="#" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="/" class="nav-link">Muddatli to'lov</a></li>
+          <li><a href="/" class="nav-link">Yetkazib berish</a></li>
+          <li><a href="/" class="nav-link">To'lov</a></li>
+          <li><a href="/" class="nav-link">Biz haqimizda</a></li>
           <li>
-            <a href="#" class="nav-link">
+            <a href="/" class="nav-link">
               <i class="far fa-heart"></i> &nbsp; Yoqtirilgan
             </a>
           </li>
@@ -55,15 +55,15 @@
             </div>
             <div>
               <ul>
-                <li><a href="#" class="nav-link">Muddatli to'lov</a></li>
-                <li><a href="#" class="nav-link">Yetkazib berish</a></li>
-                <li><a href="#" class="nav-link">To'lov</a></li>
-                <li><a href="#" class="nav-link">Muddatli to'lov</a></li>
-                <li><a href="#" class="nav-link">Yetkazib berish</a></li>
-                <li><a href="#" class="nav-link">To'lov</a></li>
-                <li><a href="#" class="nav-link">Muddatli to'lov</a></li>
-                <li><a href="#" class="nav-link">Yetkazib berish</a></li>
-                <li><a href="#" class="nav-link">To'lov</a></li>
+                <li><a href="/" class="nav-link">Muddatli to'lov</a></li>
+                <li><a href="/" class="nav-link">Yetkazib berish</a></li>
+                <li><a href="/" class="nav-link">To'lov</a></li>
+                <li><a href="/" class="nav-link">Muddatli to'lov</a></li>
+                <li><a href="/" class="nav-link">Yetkazib berish</a></li>
+                <li><a href="/" class="nav-link">To'lov</a></li>
+                <li><a href="/" class="nav-link">Muddatli to'lov</a></li>
+                <li><a href="/" class="nav-link">Yetkazib berish</a></li>
+                <li><a href="/" class="nav-link">To'lov</a></li>
               </ul>
               <label for="nav-check">
                 <i class="fa fa-times"></i>
@@ -93,9 +93,9 @@
         <div class="nav-right">
           <ul>
             <li>
-              <a href="#" class="nav-link">
+              <a href="/cart.html" class="nav-link">
                 <span> Savatcha </span>
-                <i class="fa fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart"></i>
                 <sup>2</sup>
               </a>
             </li>
@@ -119,92 +119,86 @@
       </div>
     </nav>
 
-    <section class="landing landing-login">
-      <div class="row">
-        <div class="container-login">
-          <div class="tab">
-            <button>Hisob yaratish</button>
-            <button>Kirish</button>
-          </div>
+    <div class="nav-categ">
+      <div>
+        <a href="">Mobil qurilmalar va Aksessuarlar</a>
+      </div>
 
-          <div id="register" class="tab-content" style="display: none">
-            <div>
-              <h3>Tez ro'yxatdan o'tish</h3>
-              <a href="/" class="btn btn-facebook">
-                <i class="fab fa-facebook"></i> facebook
-              </a>
-              <a href="/" class="btn btn-google">
-                <i class="fab fa-google"></i> Google
-              </a>
-              <h3>yoki</h3>
-            </div>
+      <div>
+        <a href="">Televizorlar va Videotexnikalar</a>
+      </div>
 
-            <form action="/" method="post">
-              <label for="fullName">To'liq ism</label>
-              <input
-                id="fullName"
-                type="text"
-                placeholder="To'liq ismingizni kiriting"
-                required
-              />
-              <label for="email1">Email</label>
-              <input
-                id="email1"
-                type="email"
-                placeholder="Elektron pochtangizni kiriting"
-                required
-              />
-              <label for="password1">Parol</label>
-              <input
-                id="password1"
-                type="password"
-                placeholder="Parolingizni kiriting"
-                required
-              />
-              <input id="check1" type="checkbox" />
-              <label for="check1">Eslab qol</label>
-              <button type="submit" class="btn-real btn-real-black">
-                Hisob yaratish
-              </button>
-            </form>
-          </div>
+      <div>
+        <a href="">Noutbuk va Kompyuterlar</a>
+      </div>
 
-          <div id="login" class="tab-content" style="display: block">
-            <h1>Hisobimga kirish</h1>
-            <form action="/login.html" method="post">
-              <label for="email2">Email</label>
-              <input
-                id="email2"
-                type="email"
-                placeholder="Elektron pochtangizni kiriting"
-                required
-              />
-              <label for="password2">Parol</label>
-              <input
-                id="password2"
-                type="password"
-                placeholder="Parolni kiriting"
-                required
-              />
-              <input type="checkbox" name="" id="check2" />
-              <label for="check2">Eslab qol</label>
-              <button type="submit" class="btn-real btn-real-black">
-                Kirish
-              </button>
-            </form>
-            <div>
-              <h3>Tez kirish</h3>
-              <a href="/" class="btn btn-facebook">
-                <i class="fab fa-facebook"></i> facebook
-              </a>
-              <a href="/" class="btn btn-google">
-                <i class="fab fa-google"></i> Google
-              </a>
-            </div>
-          </div>
+      <div>
+        <a href="">Katta maishiy texnikalar</a>
+      </div>
+
+      <div>
+        <a href="">Kichik maishiy texnikalar</a>
+      </div>
+
+      <div>
+        <a href="">Go'zallik va Salomatlik</a>
+      </div>
+    </div>
+
+    <div class="cart-wrapper">
+      <div class="cart">
+        <div class="cartlink">
+          <img src="./img/airpods.jpg" alt="Airpods" />
+          <a href="/">Airpods Wireless Bluetooth Headphones</a>
+        </div>
+        <div class="product-counter">
+          <span>
+            <i class="fa fa-minus"></i>
+          </span>
+          <input type="text" value="1" min="1" />
+          <span>
+            <i class="fa fa-plus"></i>
+          </span>
+        </div>
+        <div>
+          <button class="btn-real btn-real-white">
+            <i class="fas fa-trash"></i>
+            O'chirish
+          </button>
+
+          <button class="btn-real btn-real-white">
+            <i class="fas"></i>
+            Sotib olish
+          </button>
         </div>
       </div>
-    </section>
+      <div class="cart">
+        <div class="cartlink">
+          <img src="./img/airpods.jpg" alt="Airpods" />
+          <a href="/">Airpods Wireless Bluetooth Headphones</a>
+        </div>
+        <div class="product-counter">
+          <span>
+            <i class="fa fa-minus"></i>
+          </span>
+          <input type="text" value="1" min="1" />
+          <span>
+            <i class="fa fa-plus"></i>
+          </span>
+        </div>
+        <div>
+          <button class="btn-real btn-real-white">
+            <i class="fas fa-trash"></i>
+            O'chirish
+          </button>
+
+          <button class="btn-real btn-real-white">
+            <i class="fas"></i>
+            Sotib olish
+          </button>
+        </div>
+      </div>
+    </div>
 
     <section>
       <div class="content-wrapper">
@@ -236,10 +230,10 @@
           <a href="/index.html">OnlineStore</a>
         </div>
         <div class="footer-icons">
-          <a href="#"><i class="fab fa-telegram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="/"><i class="fab fa-telegram"></i></a>
+          <a href="/"><i class="fab fa-facebook"></i></a>
+          <a href="/"><i class="fab fa-instagram"></i></a>
+          <a href="/"><i class="fab fa-youtube"></i></a>
         </div>
 
         <p>OnlineStore &copy; 2021</p>
