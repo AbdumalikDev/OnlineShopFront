@@ -12,10 +12,6 @@
 /* .cartlink {
 } */
 
-.cart > div {
-  display: inline-block;
-}
-
 .cart a {
   text-decoration: none;
   color: #000;
@@ -24,6 +20,8 @@
 
 .cart img {
   width: 90px;
+  height: 90px;
+  display: inline;
 }
 
 .cart button {
@@ -32,27 +30,32 @@
   padding: 14px;
 }
 
+.product-counter {
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
 .product-counter > span {
   cursor: pointer;
-  text-align: center;
-  padding-top: 6px;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   font-size: 16px;
   color: #222;
-  background-color: #eee;
+  background-color: #efefef;
   border: 1px solid #efefef;
 }
 
 .product-counter > input {
-  display: inline-block;
-  width: 40px;
-  height: 30px;
   border: 1px solid #efefef;
+  height: 40px;
+  width: 60px;
   color: #222;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   outline: none;
+  border: none;
 }
